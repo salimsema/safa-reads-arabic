@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Safa Learns Arabic</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap"
+        rel="stylesheet"
+        media="print"
+        onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  </noscript>
+  
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2E7D32">
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/icon.svg">
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Safa Learns Arabic">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  
+  <meta name="msapplication-TileColor" content="#2E7D32">
+  <meta name="msapplication-TileImage" content="/assets/icons/icon-144.png">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Progress display (right side) -->
+  <div id="progress" class="progress">Read: 0 / 0 ⭐</div>
+
+  <!-- Toggle controls button (left side) -->
+  <button id="toggleControls" class="header-toggle">›</button>
+
+  <!-- Control panel (slides from left) -->
+  <div class="header" id="controls">
+    <div class="mode-selector">
+      <label>
+        <input type="radio" name="mode" value="single" id="modeSingle">
+        1 Letter
+      </label>
+      <label>
+        <input type="radio" name="mode" value="multi" id="modeMulti" checked>
+        Many Letters
+      </label>
+    </div>
+    
+    <button id="newLetters" class="btn">New Letters</button>
+    
+    <label class="auto-shuffle">
+      <input type="checkbox" id="autoShuffle">
+      Auto (60s)
+    </label>
+    
+    <button id="install-btn" class="install-button" aria-label="Install app" style="display:none;">
+      Install
+    </button>
+  </div>
+
+  <!-- Offline status (left side bottom) -->
+  <div id="online-status" class="offline-badge" style="display:none;">
+    Offline Mode (still works!)
+  </div>
+
+  <!-- Main content -->
+  <div id="letterContainer" class="letter-container"></div>
+
+  <script src="js/speech.js"></script>
+  <script src="js/sound.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

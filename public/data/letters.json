@@ -1,0 +1,33 @@
+{
+  "letters": [
+    { "letter": "ا", "name": "أَلِف", "nameEn": "alif", "id": 1 },
+    { "letter": "ب", "name": "بَاء", "nameEn": "baa", "id": 2 },
+    { "letter": "ت", "name": "تَاء", "nameEn": "taa", "id": 3 },
+    { "letter": "ث", "name": "ثَاء", "nameEn": "thaa", "id": 4 },
+    { "letter": "ج", "name": "جِيم", "nameEn": "jeem", "id": 5 },
+    { "letter": "ح", "name": "حَاء", "nameEn": "haa", "id": 6 },
+    { "letter": "خ", "name": "خَاء", "nameEn": "khaa", "id": 7 },
+    { "letter": "د", "name": "دَال", "nameEn": "daal", "id": 8 },
+    { "letter": "ذ", "name": "ذَال", "nameEn": "zaal", "id": 9 },
+    { "letter": "ر", "name": "رَاء", "nameEn": "raa", "id": 10 },
+    { "letter": "ز", "name": "زَاي", "nameEn": "zaa", "id": 11 },
+    { "letter": "س", "name": "سِين", "nameEn": "seen", "id": 12 },
+    { "letter": "ش", "name": "شِين", "nameEn": "sheen", "id": 13 },
+    { "letter": "ص", "name": "صَاد", "nameEn": "saad", "id": 14 },
+    { "letter": "ض", "name": "ضَاد", "nameEn": "daad", "id": 15 },
+    { "letter": "ط", "name": "طَاء", "nameEn": "taah", "id": 16 },
+    { "letter": "ظ", "name": "ظَاء", "nameEn": "zhaa", "id": 17 },
+    { "letter": "ع", "name": "عَين", "nameEn": "ain", "id": 18 },
+    { "letter": "غ", "name": "غَين", "nameEn": "ghain", "id": 19 },
+    { "letter": "ف", "name": "فَاء", "nameEn": "faa", "id": 20 },
+    { "letter": "ق", "name": "قَاء", "nameEn": "qaaf", "id": 21 },
+    { "letter": "ك", "name": "كَاف", "nameEn": "kaaf", "id": 22 },
+    { "letter": "ل", "name": "لَام", "nameEn": "laam", "id": 23 },
+    { "letter": "م", "name": "مِيم", "nameEn": "meem", "id": 24 },
+    { "letter": "ن", "name": "نُون", "nameEn": "noon", "id": 25 },
+    { "letter": "ه", "name": "هَاء", "nameEn": "haah", "id": 26 },
+    { "letter": "و", "name": "وَاو", "nameEn": "waw", "id": 27 },
+    { "letter": "ء", "name": "هَمْزَة", "nameEn": "hamzah", "id": 28 },
+    { "letter": "ي", "name": "يَاء", "nameEn": "yaa", "id": 29 }
+  ]
+}
