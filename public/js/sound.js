@@ -14,24 +14,13 @@ const Sound = {
     
     audio.play().then(() => {
       console.log(`[Sound] Playing: ${letterId}_${nameEn}.mp3`);
-    }).catch((err) => {
-      console.warn(`[Sound] Sound file not found, using TTS fallback: ${nameEn}`);
-      // Fallback to TTS - need to get Arabic name from lettersData
+    }).catch(() => {
+      // Audio failed (file not found or other error) - use TTS fallback silently
       const letter = App.lettersData?.find(l => l.id === letterId);
       if (letter && typeof Speech !== 'undefined' && Speech.speak) {
         Speech.speak(letter.name);
-      } else {
-        console.error('[Sound] TTS not available');
       }
+      // Don't log errors to console - fallback is expected behavior
     });
-  },
-
-  /**
-   * Check if sound file exists (preload check)
-   */
-  isAvailable(letterId) {
-    return fetch(`/sounds/${letterId}_name.mp3`, { method: 'HEAD' })
-      .then(response => response.ok)
-      .catch(() => false);
   }
 };
