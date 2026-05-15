@@ -151,7 +151,7 @@ self.addEventListener('fetch', (event) => {
       if (cached) {
         // Security: Verify cached content integrity before returning
         try {
-          const cachedBuffer = await cached.arrayBuffer();
+          const cachedBuffer = await cached.clone().arrayBuffer();
           const expectedHash = integrityMap.get(url.pathname);
 
           if (expectedHash) {
